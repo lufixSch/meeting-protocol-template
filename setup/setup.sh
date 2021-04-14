@@ -47,7 +47,7 @@ fi
 
 DATE=`date +"%d.%m.%Y"`
 DATE_NAME=`date +"%y_%m_%d"`
-TIME=`date +"%I:%M"`
+TIME=`date +"%H:%M"`
 
 cat > meeting_${DATE_NAME}.tex << EOF
 \input{./src/config/index}
