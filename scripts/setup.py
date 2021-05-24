@@ -14,7 +14,6 @@ import datetime
 
 _main_file = r'main.tex'
 _params_file = r'params.tex'
-_content_file = r'content'
 
 arg_def = {
     "topic": ("-t", "--topic", "topic of the meeting"),

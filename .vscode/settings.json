@@ -7,18 +7,9 @@
   ],
   "latex-workshop.latex.tools": [
     {
-      "name": "latexmk",
-      "command": "latexmk",
-      "args": [
-        "-synctex=1",
-        "-interaction=nonstopmode",
-        "-file-line-error",
-        "-pdf",
-        "-outdir=%OUTDIR%",
-        "%DOC%",
-        "-f"
-      ],
-      "env": {}
+      "name": "prebuild",
+      "command": "make",
+      "args": ["prebuild"]
     },
     {
       "name": "xelatex",
