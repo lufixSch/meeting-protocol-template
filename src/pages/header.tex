@@ -7,7 +7,9 @@
         \small{Datum}&\small{Uhrzeit:}&\small{Dauer:}&\small{Gesprächsführer:}\\
         \textbf{\date}&\textbf{\time}&\textbf{\duration}&\textbf{\leader}~\\
         \hline
-        \small{Teilnehmer}\\
-        \multicolumn{4}{l}{\textbf{\participants}}\\
+        \ifcsname participants\endcsname
+            \small{Teilnehmer}\\
+            \multicolumn{4}{l}{\textbf{\participants}}\\
+        \fi
     \end{tabular}
 \end{table}
