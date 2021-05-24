@@ -24,6 +24,10 @@ clean:
 	@rm -R ./build
 	@make pdf
 
+push:
+	@git push
+	@git push "git@github.com:lufixSch/meeting-protocol-template.git"
+
 # run setup script
 init:
 	@/usr/bin/env python ./scripts/setup.py
