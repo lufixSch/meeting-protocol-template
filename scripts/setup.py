@@ -73,6 +73,10 @@ def setupFilestructure():
     params.write(params_str)
     params.close()
 
+    makefile = open(r'Makefile', 'w')
+    content = makefile.read()
+    makefile.write(content.replace(r"%ENTRYPOINT%", filename))
+
     print('Meeting protocol initialized')
 
 
