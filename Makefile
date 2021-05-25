@@ -17,7 +17,7 @@ pdf: prebuild
 	@xelatex -synctex=1 -interaction=nonstopmode -file-line-error -output-directory=$(OUTDIR) $(DOC)
 
 prebuild:
-	@/usr/bin/env python ./scripts/build.py
+	@/usr/bin/env python3 ./scripts/build.py
 
 # clean buildfolder and create pdf
 clean:
@@ -30,4 +30,4 @@ push:
 
 # run setup script
 init:
-	@/usr/bin/env python ./scripts/setup.py
+	@/usr/bin/env python3 ./scripts/setup.py
