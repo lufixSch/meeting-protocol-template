@@ -31,3 +31,8 @@ push:
 # run setup script
 init:
 	@/usr/bin/env python3 ./scripts/setup.py
+
+new:
+	@git restore .
+	@rm $(DOC)
+	@make init
