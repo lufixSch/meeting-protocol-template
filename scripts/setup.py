@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 """
   Created: 5/24/21
@@ -73,9 +73,13 @@ def setupFilestructure():
     params.write(params_str)
     params.close()
 
-    makefile = open(r'Makefile', 'w')
+    makefile = open(r'Makefile')
     content = makefile.read()
+    makefile.close()
+
+    makefile = open(r'Makefile', 'w')
     makefile.write(content.replace(r"%ENTRYPOINT%", filename))
+    makefile.close()
 
     print('Meeting protocol initialized')
 
